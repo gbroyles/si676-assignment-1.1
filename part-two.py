@@ -106,7 +106,7 @@ print('Items Pulled from LOC:', item_count)
 print('Error Count', error_count)
 print('Files Created', file_count)
 
-main_directory = os.path.join('/', 'Users', 'gbroy', 'Documents', 'umich', 'courses', 'si676', 'si676-assignment-1.1')
+main_directory = os.path.join('/', 'Users', 'gcpbr', 'Documents', 'umich', 'courses', 'si676', 'si676-assignment-1.1')
 project_directory = 'collection-project'
 files_directory = 'item-files'
 metadata_directory = 'item-metadata'
