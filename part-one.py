@@ -31,7 +31,7 @@ print('Number of Free to Use Library Objects:',len(collection_json['content']['s
 
 #print(collection_json['content']['set']['items'][0].keys())
 
-library_collection_list_filepath = '../si676-assignment-1.1/library_collection_list_test.csv'
+library_collection_list_filepath = '../si676-assignment-1.1/library_collection_list.csv'
 headers = ['image','link','title']
 
 with open(library_collection_list_filepath, 'w', encoding='utf-8', newline='') as f:

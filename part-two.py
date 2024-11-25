@@ -2,6 +2,7 @@ import requests
 import csv
 import json
 import os
+import glob
 from os.path import join
 
 def regenerate_library_collection(libraries_csv):
@@ -50,7 +51,7 @@ item_count = 0
 error_count = 0
 file_count = 0
 
-data_directory = 'si676-assignment-1.1'
+data_directory = 'collection-project'
 object_metadata_directory = 'item-metadata'
 object_metadata_file_prefix = 'item_metadata'
 json_suffix = '.json'
@@ -119,3 +120,25 @@ if os.path.isdir(loc_files):
 else:
     os.mkdir(loc_files)
     print('I have created', loc_files)
+
+search_for_metadata_here = os.path.join(metadata_directory)
+
+print(search_for_metadata_here)
+
+metadata_file_list = glob.glob(search_for_metadata_here + '/*.json')
+
+print(metadata_file_list)
+
+object_image_urls = list()
+count = 0
+
+for object in metadata_file_list:
+    with open(object, 'r', encoding='utf-8') as f:
+        metadata = json.load(f)
+#print(metadata.keys())
+        #image_url_number = len(metadata['link'])
+        image_url = metadata['link'][-1]
+        object_image_urls.append(image_url)
+        count += 1
+
+print(f'Identified {str(count)} object URLs')
