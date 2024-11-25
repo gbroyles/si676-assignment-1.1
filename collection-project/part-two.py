@@ -106,3 +106,16 @@ print('Items Pulled from LOC:', item_count)
 print('Error Count', error_count)
 print('Files Created', file_count)
 
+main_directory = os.path.join('/', 'Users', 'gbroy', 'Documents', 'umich', 'courses', 'si676', 'si676-assignment-1.1')
+project_directory = 'collection-project'
+files_directory = 'item-files'
+metadata_directory = 'item-metadata'
+
+loc_files = os.path.join(main_directory, project_directory, files_directory)
+print('Searching for', loc_files)
+
+if os.path.isdir(loc_files):
+    print('I have located', loc_files)
+else:
+    os.mkdir(loc_files)
+    print('I have created', loc_files)
