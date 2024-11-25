@@ -20,6 +20,9 @@ print('Free to Use Libraries:',collection_response.url)
 
 collection_json = collection_response.json()
 
+with open("collection.json", "w") as f:
+    json.dump(collection_json, f)
+
 #print (collection_json)
 
 print(collection_json.keys())

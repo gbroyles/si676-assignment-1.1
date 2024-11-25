@@ -27,7 +27,7 @@ libraries_set_list = regenerate_library_collection(libraries_csv)
 
 libraries_set_list[0]
 
-loc_url = 'https://www.loc.gov/pictures'
+loc_url = 'https://www.loc.gov'
 
 #print(loc_url)
 
@@ -136,9 +136,55 @@ for object in metadata_file_list:
     with open(object, 'r', encoding='utf-8') as f:
         metadata = json.load(f)
 #print(metadata.keys())
-        #image_url_number = len(metadata['link'])
-        image_url = metadata['link'][-1]
+        image_url_number = len(metadata['image_url'])
+        image_url = metadata['image_url'][-1]
         object_image_urls.append(image_url)
         count += 1
 
 print(f'Identified {str(count)} object URLs')
+
+object_image_urls
+
+libraries_set_list_with_images = list()
+
+for object in metadata_file_list:
+    with open(object, 'r', encoding='utf-8') as object_info:
+        object_metadata = json.load(object_info)
+        object_metadata_dictionary = dict()
+        object_metadata_dictionary['item_URI'] = object_metadata['id']
+        try:
+            object_metadata_dictionary['lccn'] = object_metadata['library_of_congress_control_number']
+        except:
+            object_metadata_dictionary['lccn'] = None
+        object_metadata_dictionary['title'] = object_metadata['title']
+        object_metadata_dictionary['image_URL_large'] = object_metadata['image_url'][-1]
+
+        libraries_set_list_with_images.append(object_metadata_dictionary)
+
+print(libraries_set_list_with_images[0])
+print(object_metadata_dictionary.keys())
+
+item_count = 0
+error_count = 0
+file_count = 0
+
+image_file_prefix = 'img_'
+
+for object in libraries_set_list_with_images:
+        image_url = object['image_URL_large']
+        short_id = object['item_URI'].split('/')[-2]
+        print('Searching for', image_url)
+        item_count += 1
+
+        r = requests.get(image_url)
+        if r.status_code == 200:
+            image_out = os.path.join('/', 'Users', 'gcpbr', 'Documents', 'umich', 'courses', 'si676', 'si676-assignment-1.1', 'collection-project', 'item-files', str(image_file_prefix + short_id + '.jpg'))
+            with open(image_out, 'wb') as file:
+                file.write(r.content)
+                print('File Created',image_out)
+                file_count += 1
+
+print('Status Log')
+print('Files Pulled from LOC:',item_count)
+print('Error Count:',error_count)
+print('Files Completed:',file_count)
