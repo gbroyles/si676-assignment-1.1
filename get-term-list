@@ -1,0 +1,48 @@
+import json
+from os.path import join
+
+#with open(join('/','Users','gcpbr','Documents','umich','courses','si676','si676-assignment-1.1','collection-project','item-metadata','item_metadata-cph.3b41963.json'), encoding='utf-8') as file:
+   # metadata = json.load(file)
+
+#print(json.dumps(metadata, indent=2)[:100])
+
+with open(join('/','Users','gcpbr','Documents','umich','courses','si676','si676-assignment-1.1','collection-project','item-metadata','item_metadata-fsa.8b14169.json'), encoding='utf-8') as file:
+    metadata = json.load(file)
+
+for attribute in metadata['item'].items():
+    print(attribute[0], ':\t', attribute[1])
+
+metadata_fields_file = join('/','Users','gcpbr','Documents','umich','courses','si676','si676-assignment-1.1','collection-project','metadata_fields-2.txt')
+
+with open(metadata_fields_file, 'w') as f:
+    f.write('attribute\tvalue\n')
+    for attribute in metadata['item'].items():
+        f.write(str(attribute[0]) + '\t' + str(attribute[1]) + '\n')
+
+for attribute in metadata.keys():
+    if 'created' in attribute:
+        print(attribute)
+
+for attribute in metadata.keys():
+    if 'date' in attribute:
+        print(attribute)
+
+for attribute in metadata.keys():
+    if 'contributor' in attribute:
+        print(attribute)
+
+contributors = metadata['contributors']
+contributor_names = metadata['contributor_names']
+created = metadata['created']
+date = metadata['date']
+created_published_date = metadata['created_published_date']
+source_created = metadata['source_created']
+dates = metadata['dates']
+
+print(contributors)
+print(contributor_names)
+print(created)
+print(date)
+print(created_published_date)
+print(source_created)
+print(dates)

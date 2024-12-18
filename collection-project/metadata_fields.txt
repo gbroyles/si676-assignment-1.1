@@ -1,0 +1,38 @@
+attribute	value
+call_number	SSF - Libraries--Georgia--Cordele <item> [P&P]
+control_number	91787443
+created	2016-04-21T09:17:00Z
+created_published	[ca. 1916]
+created_published_date	[ca. 1916]
+date	[ca. 1916]
+digital_id	['cph 3b41963 //hdl.loc.gov/loc.pnp/cph.3b41963']
+display_offsite	True
+format	['still image']
+formats	[{'link': 'https://www.loc.gov/pictures/related/?fi=format&q=Photographic%20prints--1910-1920.&co=cph', 'title': 'Photographic prints--1910-1920.'}]
+genre	['Photographic prints--1910-1920']
+id	91787443
+link	https://www.loc.gov/pictures/item/91787443/
+location	['Georgia--Cordele']
+marc	https://www.loc.gov/pictures/item/91787443/marc/
+medium	['1 photographic print.']
+medium_brief	1 photographic print.
+mediums	['1 photographic print.']
+modified	2016-04-21T09:17:00Z
+notes	['At bottom right of photo: "Cordele Book Co."', 'Wittemann Collection.']
+number_former_id	['https://www.loc.gov/item/91787443', 'https://www.loc.gov/item/11583075']
+other_control_numbers	['11583075']
+place	[{'latitude': '', 'link': 'https://www.loc.gov/pictures/related/?fi=place&q=Georgia--Cordele&co=cph', 'longitude': '', 'title': 'Georgia--Cordele'}]
+reproduction_number	LC-USZ62-95830 (b&w film copy neg.)
+resource_links	['//hdl.loc.gov/loc.pnp/cph.3b41963']
+rights_advisory	No known restrictions on publication.
+rights_information	No known restrictions on publication.
+service_low	https://tile.loc.gov/storage-services/service/pnp/cph/3b40000/3b41000/3b41900/3b41963_150px.jpg
+service_medium	https://tile.loc.gov/storage-services/service/pnp/cph/3b40000/3b41000/3b41900/3b41963r.jpg
+sort_date	1916
+source_created	1991-08-22T00:00:00Z
+source_modified	2012-06-14T21:04:56Z
+subject_headings	['Libraries--Georgia--Cordele--1910-1920.', 'Georgia--Cordele']
+subjects	['Libraries--Georgia--Cordele--1910-1920']
+summary	Photo shows a group of children posed on and in front of steps, roof and dome draped with stars and stripes banners. A Carnegie grant for $10,000 in 1903 funded this building, with an  additional $7,556 in 1916 for remodeling. Still used as a public library.
+thumb_gallery	https://tile.loc.gov/storage-services/service/pnp/cph/3b40000/3b41000/3b41900/3b41963_150px.jpg
+title	Carnegie Library, Cordele, Georgia

@@ -1,0 +1,43 @@
+attribute	value
+call_number	LC-USF34- 008833-D [P&P] LOT 412  (corresponding photographic print)
+contributors	['Vachon, John, 1914-1975, photographer.']
+control_number	2017762724
+created	2017-10-10T03:45:38Z
+created_published	1938 Nov.
+created_published_date	1938 Nov.
+creators	[{'link': '//www.loc.gov/pictures/related/?fi=name&q=Vachon%2C%20John%2C%201914-1975&co=fsa', 'role': 'photographer', 'title': 'Vachon, John, 1914-1975'}]
+date	1938 Nov.
+digital_id	['fsa 8b14169 //hdl.loc.gov/loc.pnp/fsa.8b14169']
+display_offsite	True
+format	['still image']
+formats	[{'link': '//www.loc.gov/pictures/related/?fi=format&q=Safety%20film%20negatives.&co=fsa', 'title': 'Safety film negatives.'}]
+genre	['Safety film negatives']
+id	2017762724
+language	['eng']
+link	//www.loc.gov/pictures/item/2017762724/
+marc	//www.loc.gov/pictures/item/2017762724/marc/
+medium	['1 negative : safety ; 3 1/4 x 4 1/4 inches or smaller.']
+medium_brief	1 negative :
+mediums	['1 negative : safety ; 3 1/4 x 4 1/4 inches or smaller.']
+modified	2017-10-10T03:45:38Z
+notes	['Title and other information from caption card.', 'Transfer; United States. Office of War Information. Overseas Picture Division. Washington Division; 1944.', 'More information about the FSA/OWI Collection is available at http://hdl.loc.gov/loc.pnp/pp.fsaowi', 'Temp. note: usf34batch1']
+number_former_id	['https://www.loc.gov/item/2017762724', 'https://www.loc.gov/item/fsa1998021372/PP']
+other_control_numbers	['19875438', 'fsa1998021372/PP']
+other_number	G 9224
+part_of	Farm Security Administration - Office of War Information Photograph Collection (Library of Congress)
+place	[{'latitude': '', 'link': '//www.loc.gov/pictures/related/?fi=place&q=Nebraska--Douglas%20County--Omaha&co=fsa', 'longitude': '', 'title': 'Nebraska--Douglas County--Omaha'}]
+repository	Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print
+reproduction_number	LC-USF34-008833-D (b&w film neg.)
+resource_links	['//hdl.loc.gov/loc.pnp/fsa.8b14169']
+rights_advisory	No known restrictions. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs https://www.loc.gov/rr/print/res/071_fsab.html
+rights_information	No known restrictions. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs https://www.loc.gov/rr/print/res/071_fsab.html
+service_low	https://tile.loc.gov/storage-services/service/pnp/fsa/8b14000/8b14100/8b14169_150px.jpg
+service_medium	https://tile.loc.gov/storage-services/service/pnp/fsa/8b14000/8b14100/8b14169r.jpg
+sort_date	1938
+source_collection	['Farm Security Administration - Office of War Information Photograph Collection (Library of Congress)']
+source_created	1998-09-24T00:00:00Z
+source_modified	2017-10-03T16:08:52Z
+subject_headings	['United States--Nebraska--Douglas County--Omaha.', 'Omaha--Nebraska', 'Nebraska--Douglas County--Omaha']
+subjects	['United States--Nebraska--Douglas County--Omaha', 'Omaha--Nebraska']
+thumb_gallery	https://tile.loc.gov/storage-services/service/pnp/fsa/8b14000/8b14100/8b14169_150px.jpg
+title	Newspaper reading room of public library. Omaha, Nebraska
