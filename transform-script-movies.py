@@ -191,7 +191,7 @@ for file in list_of_movie_item_metadata_files:
         except:
             rights_advisory = 'Undetermined'
         try:
-            image_url = item_data['image_url'][1]
+            image_url = item_data['image_url'][2]
         except:
             image_url = 'Did not identify a URL.'
         try:
